@@ -9,5 +9,9 @@ public class Q4 {
         int b = sc.nextInt();
         int c = sc.nextInt();
         // TODO: b가 a보다 크고 c보다 작은지 평가하여 출력
+        boolean isBetween = (b > a && b < c); // 비교연산자 (>, <)
+                                      // 논리연산자 (&&)
+
+        System.out.println(isBetween); // 비교하여 평가값 출력
     }
 }
