@@ -9,5 +9,9 @@ public class Q5 {
         int b = sc.nextInt();
         int c = sc.nextInt();
         // TODO: a += b * c 연산 후 a, b, c 출력
+        a += b * c;  // a += b * c 연산 진행 (복합 대입 연산자 : += )
+                     // a = a + (b * c)
+
+        System.out.println(a + " " + b + " " + c); // a, b, c 출력
     }
 }
