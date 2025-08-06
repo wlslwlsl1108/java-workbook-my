@@ -13,7 +13,6 @@ public class Q3 {
         // long lB = b; -> b 자동 형변환
         // long lS = s; -> s 자동 형변환
         // long lI = i; -> i 자동 형변환
-        // long lL = l; -> l 자동 형변환
         long sum = b + s + i + l; // b, s, i, l 합산(long 자동 형 변환)
 
         float fSum = (float) sum; // long -> float 강제 형 변환
