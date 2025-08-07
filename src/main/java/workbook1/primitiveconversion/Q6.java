@@ -14,5 +14,6 @@ public class Q6 {
         byte sub = (byte)(Is1 - Is2); // 두 수의 차 강제 형 변환 (int -> byte)
 
         System.out.println(sub); // 두 수의 차(byte) 출력
+        // byte 범위를 벗어나는 값이 나오면 오버플로우
     }
 }
