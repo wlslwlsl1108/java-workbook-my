@@ -15,18 +15,18 @@ class Account {
     }
 
     //deposit 메서드 -> 입금//
-    int deposit(int amount) {
+    void deposit(int amount) {
         balance += amount;
-        return balance;
+        System.out.println(balance);
     }
 
     //withdraw 메서드 -> 출금//
-    boolean withdraw(int amount) {
-        if (balance < amount) {
-            return false;
-        } else{
+    void withdraw(int amount) {
+        if (balance >= amount) {
             balance -= amount;
-            return true;
+            System.out.println(balance);
+        } else{
+            System.out.println("잔액 부족");
         }
     }
 }
@@ -53,6 +53,5 @@ public class Q5 {
         } else {
             acc.withdraw(amt2); // TODO: withdraw 메서드 작성 후 주석 해제
         }
-
     }
 }

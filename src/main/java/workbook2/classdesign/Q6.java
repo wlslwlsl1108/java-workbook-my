@@ -16,20 +16,15 @@ class Time {
     }
 
     //메서드
-    int addSeconds(int addsecond) {
-        second += addsecond;
-        if (second >= 60) {
-            minute += second / 60;
-            second %= 60;
-            if (minute >= 60) {
-                hour += minute / 60;
-                minute %= 60;
-                if (hour >= 24) {
-                    hour -= 24;
-                }
-            }
-        }
-        return hour + minute + second;
+    void addSeconds(int add) {
+        second += add;
+        minute += second / 60;
+        second = second % 60;
+
+        hour =+ minute / 60;
+        minute = minute % 60;
+
+        hour = hour / 24;
     }
 }
 

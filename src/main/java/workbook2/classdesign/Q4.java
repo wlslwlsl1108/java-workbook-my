@@ -12,8 +12,8 @@ class Point {
         this.y = y;
     }
     // distanceTo 메서드 작성 //
-    void distanceTo() {
-
+    void distanceTo(Point p) {
+        System.out.println(Math.sqrt((this.x-p.x)*(this.x-p.x) + (this.y-p.y)*(this.y-p.y)));
     }
 }
 
@@ -28,5 +28,6 @@ public class Q4 {
         Point p1 = new Point(x1, y1);
         Point p2 = new Point(x2, y2);
         // TODO: p1.distanceTo(p2) 출력
+        p1.distanceTo(p2);
     }
 }
